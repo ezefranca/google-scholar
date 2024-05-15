@@ -1,0 +1,15 @@
+{
+  "name": "scholar-publications",
+  "version": "1.0.0",
+  "description": "A project to fetch Google Scholar publications.",
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

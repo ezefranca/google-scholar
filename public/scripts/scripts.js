@@ -30,7 +30,7 @@ async function checkIfExists(scholarIdOrUrl, sortby) {
 
   showLoader();
 
-  const url = `https://${window.location.hostname}/api?scholarid=${scholarId}`;
+  const url = `https://google-scholar-six.vercel.app/api?scholarid=${scholarId}`;
   const response = await fetch(url);
 
   if (response.ok) {
@@ -94,7 +94,7 @@ async function checkForResults(scholarId) {
 
   const intervalId = setInterval(async () => {
     attempts++;
-    const apiUrl = `https://${window.location.hostname}/api?scholarid=${scholarId}`;
+    const apiUrl = `https://google-scholar-six.vercel.app/api?scholarid=${scholarId}`;
     const response = await fetch(apiUrl);
 
     if (response.ok) {

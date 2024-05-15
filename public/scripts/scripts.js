@@ -1,15 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Event listener for the search form submission
   document.getElementById('scholar-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const scholarIdOrUrl = document.getElementById('scholar-id').value;
     const sortby = document.getElementById('sortby').value;
-    console.log(sortby);
     clearPreviousState();
-    fetchPublications(scholarIdOrUrl, sortby);
+    checkIfExists(scholarIdOrUrl, sortby);
+  });
+
+  // Event listener for the update button
+  document.getElementById('update-button').addEventListener('click', function() {
+    const scholarIdOrUrl = document.getElementById('scholar-id').value;
+    const sortby = document.getElementById('sortby').value;
+    triggerUpdate(scholarIdOrUrl, sortby);
   });
 });
 
-async function fetchPublications(scholarIdOrUrl, sortby) {
+/**
+ * Check if the publication JSON already exists.
+ * If it exists, display it and show the "Update" button.
+ * If it doesn't exist, fetch the publications.
+ */
+async function checkIfExists(scholarIdOrUrl, sortby) {
   let scholarId = extractScholarId(scholarIdOrUrl);
   if (!scholarId) {
     alert('Invalid Google Scholar ID or URL');
@@ -18,7 +30,29 @@ async function fetchPublications(scholarIdOrUrl, sortby) {
 
   showLoader();
 
-  const response = await fetch('/api/trigger-github-action', {
+  const url = `https://${window.location.hostname}/api?scholarid=${scholarId}`;
+  const response = await fetch(url);
+
+  if (response.ok) {
+    const jsonResult = await response.json();
+    displayResults(jsonResult);
+    displayApiUrl(scholarId);
+    hideLoader();
+    document.getElementById('update-button').style.display = 'block';
+  } else {
+    triggerFetch(scholarId, sortby, 'fetch');
+  }
+}
+
+/**
+ * Trigger a fetch or update for Google Scholar publications.
+ */
+async function triggerFetch(scholarId, sortby, action) {
+  const endpoint = action === 'fetch' ? '/api/trigger-github-action' : '/api/trigger-github-action';
+  
+  showLoader();
+
+  const response = await fetch(endpoint, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -28,26 +62,31 @@ async function fetchPublications(scholarIdOrUrl, sortby) {
 
   if (response.ok) {
     checkForResults(scholarId);
-    displayApiUrl(scholarId);
+    if (action === 'fetch') {
+      displayApiUrl(scholarId);
+    }
   } else {
     hideLoader();
-    alert('Error fetching publications');
+    alert(`Error ${action === 'fetch' ? 'fetching' : 'updating'} publications`);
   }
 }
 
-function extractScholarId(input) {
-  if (input.includes('scholar.google.com')) {
-    try {
-      const url = new URL(input);
-      return url.searchParams.get('user');
-    } catch (error) {
-      console.error('Invalid URL:', error);
-      return null;
-    }
+/**
+ * Trigger an update to fetch the latest publications.
+ */
+async function triggerUpdate(scholarIdOrUrl, sortby) {
+  let scholarId = extractScholarId(scholarIdOrUrl);
+  if (!scholarId) {
+    alert('Invalid Google Scholar ID or URL');
+    return;
   }
-  return input;
+
+  triggerFetch(scholarId, sortby, 'update');
 }
 
+/**
+ * Check if the results are available and display them.
+ */
 async function checkForResults(scholarId) {
   let attempts = 0;
   const maxAttempts = 10;
@@ -71,6 +110,25 @@ async function checkForResults(scholarId) {
   }, interval);
 }
 
+/**
+ * Extract the Google Scholar ID from the input.
+ */
+function extractScholarId(input) {
+  if (input.includes('scholar.google.com')) {
+    try {
+      const url = new URL(input);
+      return url.searchParams.get('user');
+    } catch (error) {
+      console.error('Invalid URL:', error);
+      return null;
+    }
+  }
+  return input;
+}
+
+/**
+ * Display the API URL for the fetched publications.
+ */
 function displayApiUrl(scholarId) {
   const apiUrl = `https://${window.location.hostname}/api?scholarid=${scholarId}`;
   const apiUrlElement = document.getElementById('api-url');
@@ -79,6 +137,9 @@ function displayApiUrl(scholarId) {
   document.getElementById('api-url-container').style.display = 'block';
 }
 
+/**
+ * Display the fetched publications in JSON format.
+ */
 function displayResults(jsonResult) {
   const formattedJson = JSON.stringify(jsonResult, null, 2);
   const jsonResultElement = document.getElementById('json-result');
@@ -92,6 +153,9 @@ function displayResults(jsonResult) {
   document.getElementById('result-container').style.display = 'block';
 }
 
+/**
+ * Copy the JSON result to the clipboard.
+ */
 function copyToClipboard() {
   const jsonResult = document.getElementById('json-result');
   jsonResult.select();
@@ -100,16 +164,26 @@ function copyToClipboard() {
   alert('Copied to clipboard');
 }
 
+/**
+ * Show the loader animation.
+ */
 function showLoader() {
   document.getElementById('loader').style.display = 'block';
 }
 
+/**
+ * Hide the loader animation.
+ */
 function hideLoader() {
   document.getElementById('loader').style.display = 'none';
 }
 
+/**
+ * Clear the previous state before a new search.
+ */
 function clearPreviousState() {
   document.getElementById('result-container').style.display = 'none';
   document.getElementById('json-result').value = '';
   document.getElementById('api-url-container').style.display = 'none';
+  document.getElementById('update-button').style.display = 'none';
 }

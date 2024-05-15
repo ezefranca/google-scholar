@@ -23,10 +23,18 @@ jobs:
         pip install scholarly_publications
 
     - name: Fetch and save publications
+      env:
+        SCHOLAR_ID: ${{ github.event.client_payload.scholar_id }}
       run: |
         python scripts/fetch_publications.py
 
+    - name: Check if publications file exists
+      id: check_file
+      run: |
+        if [ -f "public/publications_${{ github.event.client_payload.scholar_id }}.json" ]; then echo "File exists"; else echo "File does not exist"; exit 1; fi
+
     - name: Commit and push changes
+      if: success()
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'

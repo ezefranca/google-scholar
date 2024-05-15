@@ -29,8 +29,6 @@ jobs:
         python scripts/fetch_publications.py
 
     - name: Check if publications file exists
-      env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       id: check_file
       run: |
         if [ -f "public/publications_${{ github.event.client_payload.scholar_id }}.json" ]; then echo "File exists"; else echo "File does not exist"; exit 1; fi
@@ -38,10 +36,10 @@ jobs:
     - name: Commit and push changes
       if: success()
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --global user.email "ezequiel.ifsp@gmail.com"
         git config --global user.name "Ezequiel Santos"
         git add .
-        git commit -m "Update publications for ${{ github.event.client_payload.scholar_id }}"
-        git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+        git commit -m "Update publications for ${{ github.event.client_payload.scholar_id }}" || exit 0
+        git push

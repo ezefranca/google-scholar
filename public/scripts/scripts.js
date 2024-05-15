@@ -70,7 +70,7 @@ async function checkForResults(scholarId) {
 }
 
 function displayApiUrl(scholarId) {
-  const apiUrl = `https://${window.location.hostname}?scholarid=${scholarId}`;
+  const apiUrl = `https://${window.location.hostname}/api?scholarid=${scholarId}`;
   const apiUrlElement = document.getElementById('api-url');
   apiUrlElement.textContent = apiUrl;
   apiUrlElement.href = apiUrl;

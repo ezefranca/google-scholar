@@ -135,3 +135,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.github {
+    color: white;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer a:link { color: white; }
+footer a:visited { color: white; }
+footer a:hover { color: white; }
+footer a:active { color: white; }

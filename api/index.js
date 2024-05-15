@@ -4,7 +4,7 @@ module.exports = async (req, res) => {
   const { scholarid } = req.query;
 
   if (scholarid) {
-    const url = `https://raw.githubusercontent.com/ezefranca/google-scholar/main/public/publications_${scholarid}.json`;
+    const url = `https://raw.githubusercontent.com/ezefranca/google-scholar/main/public/${scholarid}.json`;
 
     try {
       const response = await fetch(url);

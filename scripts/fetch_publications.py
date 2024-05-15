@@ -11,7 +11,7 @@ if __name__ == "__main__":
     sortby = os.getenv('SORTBY', 'pubdate')
     if scholar_id:
         publications = fetch_publications(scholar_id, sortby=sortby)
-        file_path = f'public/publications_{scholar_id}.json'
+        file_path = f'public/database/{scholar_id}.json'
         save_publications_to_json(publications, file_path)
     else:
         print("SCHOLAR_ID environment variable not set.")

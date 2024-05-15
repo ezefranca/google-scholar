@@ -26,14 +26,19 @@ jobs:
       env:
         SCHOLAR_ID: ${{ github.event.client_payload.scholar_id }}
       run: |
+        cat SCHOLAR_ID
         python scripts/fetch_publications.py
 
     - name: Check if publications file exists
+      env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       id: check_file
       run: |
         if [ -f "public/publications_${{ github.event.client_payload.scholar_id }}.json" ]; then echo "File exists"; else echo "File does not exist"; exit 1; fi
 
     - name: Commit and push changes
+      env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       if: success()
       run: |
         git config --global user.email "ezequiel.ifsp@gmail.com"

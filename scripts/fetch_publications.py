@@ -8,8 +8,9 @@ def save_publications_to_json(publications, file_path):
 
 if __name__ == "__main__":
     scholar_id = os.getenv('SCHOLAR_ID')
+    sortby = os.getenv('SORTBY', 'pubdate')
     if scholar_id:
-        publications = fetch_publications(scholar_id)
+        publications = fetch_publications(scholar_id, sortby=sortby)
         file_path = f'public/publications_{scholar_id}.json'
         save_publications_to_json(publications, file_path)
     else:

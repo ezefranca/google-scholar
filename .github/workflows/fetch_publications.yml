@@ -25,6 +25,7 @@ jobs:
       - name: Fetch and save publications
         env:
           SCHOLAR_ID: ${{ github.event.client_payload.scholar_id }}
+          SORTBY: ${{ github.event.client_payload.sortby }}
         run: |
           python scripts/fetch_publications.py
 
@@ -35,10 +36,10 @@ jobs:
 
       - name: Commit and push changes
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.email "ezequiel.ifsp@gmail.com"
           git config --global user.name "Ezequiel Santos"
-          git add .
+          git add public/publications_${{ github.event.client_payload.scholar_id }}.json
           git commit -m "Update publications for ${{ github.event.client_payload.scholar_id }}" || exit 0
           git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git

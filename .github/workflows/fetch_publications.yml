@@ -36,12 +36,12 @@ jobs:
         if [ -f "public/publications_${{ github.event.client_payload.scholar_id }}.json" ]; then echo "File exists"; else echo "File does not exist"; exit 1; fi
 
     - name: Commit and push changes
-      env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       if: success()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
         git config --global user.email "ezequiel.ifsp@gmail.com"
         git config --global user.name "Ezequiel Santos"
         git add .
         git commit -m "Update publications for ${{ github.event.client_payload.scholar_id }}"
-        git push
+        git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git

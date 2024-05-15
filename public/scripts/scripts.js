@@ -26,6 +26,7 @@ async function fetchPublications(scholarIdOrUrl, sortby) {
 
   if (response.ok) {
     checkForResults(scholarId);
+    displayApiUrl(scholarId);
   } else {
     hideLoader();
     alert('Error fetching publications');
@@ -66,6 +67,14 @@ async function checkForResults(scholarId) {
       alert('Failed to fetch publications.');
     }
   }, interval);
+}
+
+function displayApiUrl(scholarId) {
+  const apiUrl = `https://${window.location.hostname}?scholarid=${scholarId}`;
+  const apiUrlElement = document.getElementById('api-url');
+  apiUrlElement.textContent = apiUrl;
+  apiUrlElement.href = apiUrl;
+  document.getElementById('api-url-container').style.display = 'block';
 }
 
 function displayResults(jsonResult) {

@@ -54,7 +54,7 @@ async function checkForResults(scholarId) {
   const intervalId = setInterval(async () => {
     attempts++;
     const apiUrl = `https://${window.location.hostname}/api?scholarid=${scholarId}`;
-    const response = await fetch(url);
+    const response = await fetch(apiUrl);
 
     if (response.ok) {
       clearInterval(intervalId);

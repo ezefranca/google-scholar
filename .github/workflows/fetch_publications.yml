@@ -9,37 +9,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
 
-    - name: Install scholarly_publications
-      run: |
-        python -m pip install --upgrade pip
-        pip install scholarly_publications
+      - name: Install scholarly_publications
+        run: |
+          python -m pip install --upgrade pip
+          pip install scholarly_publications
 
-    - name: Fetch and save publications
-      env:
-        SCHOLAR_ID: ${{ github.event.client_payload.scholar_id }}
-      run: |
-        python scripts/fetch_publications.py
+      - name: Fetch and save publications
+        env:
+          SCHOLAR_ID: ${{ github.event.client_payload.scholar_id }}
+        run: |
+          python scripts/fetch_publications.py
 
-    - name: Check if publications file exists
-      id: check_file
-      run: |
-        if [ -f "public/publications_${{ github.event.client_payload.scholar_id }}.json" ]; then echo "File exists"; else echo "File does not exist"; exit 1; fi
+      - name: Check if publications file exists
+        id: check_file
+        run: |
+          if [ -f "public/publications_${{ github.event.client_payload.scholar_id }}.json" ]; then echo "File exists"; else echo "File does not exist"; exit 1; fi
 
-    - name: Commit and push changes
-      if: success()
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git config --global user.email "ezequiel.ifsp@gmail.com"
-        git config --global user.name "Ezequiel Santos"
-        git add .
-        git commit -m "Update publications for ${{ github.event.client_payload.scholar_id }}" || exit 0
-        git push
+      - name: Commit and push changes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config --global user.email "ezequiel.ifsp@gmail.com"
+          git config --global user.name "Ezequiel Santos"
+          git add .
+          git commit -m "Update publications for ${{ github.event.client_payload.scholar_id }}" || exit 0
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git

@@ -52,7 +52,7 @@ async function checkForResults(scholarId) {
 
   const intervalId = setInterval(async () => {
     attempts++;
-    const url = `https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/public/publications_${scholarId}.json`;
+    const url = `https://raw.githubusercontent.com/ezefranca/google-scholar/main/public/publications_${scholarId}.json`;
     const response = await fetch(url);
 
     if (response.ok) {

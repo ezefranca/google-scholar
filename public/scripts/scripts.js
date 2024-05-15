@@ -23,10 +23,9 @@ async function fetchPublications(scholarId) {
 
 async function checkForResults(scholarId) {
   const url = `https://raw.githubusercontent.com/ezefranca/google-scholar/main/public/publications_${scholarId}.json`;
-
   let attempts = 0;
-  const maxAttempts = 20;  
-  const interval = 5000;
+  const maxAttempts = 10;  
+  const interval = 20000;
 
   const intervalId = setInterval(async () => {
     attempts++;

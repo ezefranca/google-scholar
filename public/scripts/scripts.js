@@ -48,12 +48,12 @@ function extractScholarId(input) {
 
 async function checkForResults(scholarId) {
   let attempts = 0;
-  const maxAttempts = 20;  // Adjust this based on your workflow completion time
-  const interval = 5000;  // 5 seconds
+  const maxAttempts = 10;
+  const interval = 20000;
 
   const intervalId = setInterval(async () => {
     attempts++;
-    const url = `https://raw.githubusercontent.com/ezefranca/google-scholar/main/public/publications_${scholarId}.json`;
+    const apiUrl = `https://${window.location.hostname}/api?scholarid=${scholarId}`;
     const response = await fetch(url);
 
     if (response.ok) {

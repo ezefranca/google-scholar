@@ -1,55 +1,66 @@
-document.getElementById('scholar-form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const scholarId = document.getElementById('scholar-id').value;
-  fetchPublications(scholarId);
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('scholar-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const scholarIdOrUrl = document.getElementById('scholar-id').value;
+    const sortby = document.getElementById('sortby').value;
+    fetchPublications(scholarIdOrUrl, sortby);
+  });
 });
 
-async function fetchPublications(scholarId) {
+async function fetchPublications(scholarIdOrUrl, sortby) {
+  let scholarId = extractScholarId(scholarIdOrUrl);
+  if (!scholarId) {
+    alert('Invalid Google Scholar ID or URL');
+    return;
+  }
+
   const response = await fetch('/api/trigger-github-action', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ scholarId })
+    body: JSON.stringify({ scholarId, sortby })
   });
 
   if (response.ok) {
-    document.getElementById('result').innerText = 'Fetching publications, please wait...';
-    checkForResults(scholarId);
+    const jsonResult = await response.json();
+    displayResults(jsonResult);
   } else {
-    document.getElementById('result').innerText = 'Error triggering the GitHub Action.';
+    document.getElementById('result-container').style.display = 'none';
+    alert('Error fetching publications');
   }
 }
 
-async function checkForResults(scholarId) {
-  const url = `https://raw.githubusercontent.com/ezefranca/google-scholar/main/public/publications_${scholarId}.json`;
-  let attempts = 0;
-  const maxAttempts = 10;  
-  const interval = 20000;
-
-  const intervalId = setInterval(async () => {
-    attempts++;
-    const response = await fetch(url);
-
-    if (response.ok) {
-      clearInterval(intervalId);
-      const publications = await response.json();
-      displayResults(publications);
-    } else if (attempts >= maxAttempts) {
-      clearInterval(intervalId);
-      document.getElementById('result').innerText = 'Failed to fetch publications.';
+function extractScholarId(input) {
+  if (input.includes('scholar.google.com')) {
+    try {
+      const url = new URL(input);
+      return url.searchParams.get('user');
+    } catch (error) {
+      console.error('Invalid URL:', error);
+      return null;
     }
-  }, interval);
+  }
+  return input;
 }
 
-function displayResults(publications) {
-  const resultDiv = document.getElementById('result');
-  resultDiv.innerHTML = '<h2>Publications</h2>';
-  const list = document.createElement('ul');
-  publications.forEach(pub => {
-    const listItem = document.createElement('li');
-    listItem.innerHTML = `<strong>${pub.title}</strong><br>${pub.authors}<br><em>${pub.publication_venue}</em> (${pub.year})`;
-    list.appendChild(listItem);
-  });
-  resultDiv.appendChild(list);
+function displayResults(jsonResult) {
+  const formattedJson = JSON.stringify(jsonResult, null, 2);
+  const jsonResultElement = document.getElementById('json-result');
+  jsonResultElement.value = formattedJson;
+
+  const blob = new Blob([formattedJson], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const downloadLink = document.getElementById('download-link');
+  downloadLink.href = url;
+
+  document.getElementById('result-container').style.display = 'block';
+}
+
+function copyToClipboard() {
+  const jsonResult = document.getElementById('json-result');
+  jsonResult.select();
+  jsonResult.setSelectionRange(0, 99999); // For mobile devices
+  document.execCommand('copy');
+  alert('Copied to clipboard');
 }

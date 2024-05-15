@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault();
     const scholarIdOrUrl = document.getElementById('scholar-id').value;
     const sortby = document.getElementById('sortby').value;
+    console.log(sortby);
+    clearPreviousState();
     fetchPublications(scholarIdOrUrl, sortby);
   });
 });
@@ -104,4 +106,10 @@ function showLoader() {
 
 function hideLoader() {
   document.getElementById('loader').style.display = 'none';
+}
+
+function clearPreviousState() {
+  document.getElementById('result-container').style.display = 'none';
+  document.getElementById('json-result').value = '';
+  document.getElementById('api-url-container').style.display = 'none';
 }

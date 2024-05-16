@@ -17,21 +17,25 @@
     <main>
         <div class="search-container">
             <form id="scholar-form">
-                <input type="text" id="scholar-id" placeholder="Enter Google Scholar ID or the Complete URL to your Google Scholar" required>
+                <input type="text" id="scholar-id" placeholder="Google Scholar ID or Google Scholar URL" required>
                 <div class="hint">Example: <code>qc6CJjYAAAAJ</code> or <code>https://scholar.google.com/citations?user=qc6CJjYAAAAJ</code></div>
                 <div class="sort-container">
-                    <label for="sortby">Sort by:</label>
-                    <select id="sortby">
-                        <option value="pubdate">Publication Date</option>
-                        <option value="cited">Cited</option>
-                    </select>
+                    <label>Sort:</label>
+                    <div class="checkbox-container">
+                        <label>
+                            <input type="radio" name="sortby" value="pubdate">
+                            Date
+                        </label>
+                        <label>
+                            <input type="radio" name="sortby" value="cited">
+                            Cited
+                        </label>
+                    </div>
                 </div>
-                <button type="submit">Fetch Publications</button>
+                <button type="submit"><i class="ai ai-google-scholar-square"></i>&nbsp;Fetch Publications</button>
             </form>
-            <p>Please, be patient, the first time can take one or two minutes...</p>
-            <div id="loader" class="loader" style="display:none;">
-            <p><i class="ai ai-google-scholar-square ai-1x"></i></p>
-            </div>
+            <p class="hint">Please, be patient, the first time can take one or two minutes...</p>
+            <div id="loader" class="loader" style="display:none;"></div>
         </div>
         <div id="result-container" class="result-container" style="display:none;">
             <div id="api-url-container" style="display:none;">
@@ -50,7 +54,7 @@
         <a href="https://github.com/ezefranca/google-scholar"> Access the project on Github</a><br>
         </div>
         <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ezefranca" data-color="#FFDD00" data-emoji="☕"  data-font="Bree" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-        <p>&copy; 2024 Scholar Publications Fetcher. Not affiliated with Google. Use for educational proporses only.</p>
+        <p>&copy; 2024 Scholar Publications Fetcher. Not affiliated with Google. Use for educational purposes only.</p>
     </footer>
     <script src="scripts/scripts.js"></script>
 </body>

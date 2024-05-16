@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('scholar-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const scholarIdOrUrl = document.getElementById('scholar-id').value;
-    const sortby = document.getElementById('sortby').value;
+    const sortby = getSortByValues();
     clearPreviousState();
     checkIfExists(scholarIdOrUrl, sortby);
   });
@@ -11,9 +11,22 @@ document.addEventListener('DOMContentLoaded', function() {
   // Event listener for the update button
   document.getElementById('update-button').addEventListener('click', function() {
     const scholarIdOrUrl = document.getElementById('scholar-id').value;
-    const sortby = document.getElementById('sortby').value;
+    const sortby = getSortByValues();
     triggerUpdate(scholarIdOrUrl, sortby);
   });
+
+  function getSortByValues() {
+    const checkboxes = document.querySelectorAll('input[name="sortby"]:checked');
+    let values = [];
+    checkboxes.forEach((checkbox) => {
+      values.push(checkbox.value);
+    });
+    // Set default value if no checkbox is selected
+    if (values.length === 0) {
+      values.push('pubdate'); // Default sort value
+    }
+    return values;
+  }
 });
 
 /**

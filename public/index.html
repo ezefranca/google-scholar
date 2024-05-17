@@ -35,18 +35,18 @@
                 </div>
                 <button type="submit"><i class="ai ai-google-scholar-square"></i>&nbsp;Fetch Publications</button>
             </form>
-            <p class="hint"><pre>Please be patient, the first time can take one or two minutes...</pre></p>
+            <p class="hint"><pre>First time can take longer depending of the number of publications...</pre></p>
             <div id="loader" class="loader" style="display:none;"></div>
         </div>
         <div id="result-container" class="result-container" style="display:none;">
             <div id="api-url-container" style="display:none;">
                 <h2>Your custom URL</h2>
-                <pre><code id="json-result" class="json"></code></pre>
+                <code><a id="api-url" target="_blank"></a></code>
             </div>
             <h2>Publications JSON</h2>
             <pre><code id="json-result" class="json"></code></pre>
             <button onclick="copyToClipboard()">Copy to Clipboard</button>
-            <a id="download-link" download="publications.json">Download JSON</a>
+            <button id="download-button" onclick="downloadJson()">Download JSON</button>
             <button id="update-button" style="display:none; background-color: red;">Update</button>
         </div>
     </main>

@@ -190,11 +190,6 @@ function displayResults(jsonResult) {
   // Trigger Highlight.js to highlight the code
   hljs.highlightElement(jsonResultElement);
 
-  const blob = new Blob([formattedJson], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const downloadLink = document.getElementById('download-link');
-  downloadLink.href = url;
-
   document.getElementById('result-container').style.display = 'block';
 }
 
@@ -239,3 +234,18 @@ function clearPreviousState() {
   document.getElementById('api-url-container').style.display = 'none';
   document.getElementById('update-button').style.display = 'none';
 }
+
+function downloadJson() {
+  const jsonResultElement = document.getElementById('json-result');
+  const formattedJson = jsonResultElement.textContent;
+  const blob = new Blob([formattedJson], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const downloadLink = document.createElement('a');
+  downloadLink.href = url;
+  downloadLink.download = 'publications.json';
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+}
+
+

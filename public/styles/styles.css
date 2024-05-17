@@ -245,3 +245,26 @@ footer a:active {
     overflow: auto;
     white-space: pre-wrap;
 }
+button, #download-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px; /* Add space between buttons */
+}
+
+button:hover, #download-button:hover {
+    background-color: #357ae8;
+}
+
+button:active, #download-button:active {
+    background-color: #3367d6;
+}
+
+#update-button {
+    background-color: red;
+    margin-right: 0; /* Remove right margin from the last button */
+}

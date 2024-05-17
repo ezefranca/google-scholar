@@ -233,3 +233,15 @@ footer a:active {
     display: flex;
     align-items: center;
 }
+
+.json-result {
+    width: calc(100% - 20px);
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    background: #f4f4f4;
+    overflow: auto;
+    white-space: pre-wrap;
+}

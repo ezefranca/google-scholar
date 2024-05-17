@@ -211,6 +211,7 @@ function copyToClipboard() {
  * Show the loader animation.
  */
 function showLoader() {
+  clearPreviousState();
   document.getElementById('loader').style.display = 'block';
   document.querySelector('button[type="submit"]').disabled = true;
   document.getElementById('update-button').disabled = true;

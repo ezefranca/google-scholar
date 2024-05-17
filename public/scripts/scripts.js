@@ -185,7 +185,10 @@ function displayApiUrl(scholarId) {
 function displayResults(jsonResult) {
   const formattedJson = JSON.stringify(jsonResult, null, 2);
   const jsonResultElement = document.getElementById('json-result');
-  jsonResultElement.value = formattedJson;
+  jsonResultElement.textContent = formattedJson;
+  
+  // Trigger Highlight.js to highlight the code
+  hljs.highlightElement(jsonResultElement);
 
   const blob = new Blob([formattedJson], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -200,9 +203,13 @@ function displayResults(jsonResult) {
  */
 function copyToClipboard() {
   const jsonResult = document.getElementById('json-result');
-  jsonResult.select();
-  jsonResult.setSelectionRange(0, 99999); // For mobile devices
+  const jsonResultElement = document.getElementById('json-result');
+  const textArea = document.createElement('textarea');
+  textArea.value = jsonResultElement.textContent;
+  document.body.appendChild(textArea);
+  textArea.select();
   document.execCommand('copy');
+  document.body.removeChild(textArea);
   alert('Copied to clipboard');
 }
 

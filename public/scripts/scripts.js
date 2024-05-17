@@ -202,7 +202,6 @@ function displayResults(jsonResult) {
  * Copy the JSON result to the clipboard.
  */
 function copyToClipboard() {
-  const jsonResult = document.getElementById('json-result');
   const jsonResultElement = document.getElementById('json-result');
   const textArea = document.createElement('textarea');
   textArea.value = jsonResultElement.textContent;

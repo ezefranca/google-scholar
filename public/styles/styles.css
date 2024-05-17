@@ -222,3 +222,14 @@ footer a:active {
         width: 60%;
     }
 }
+
+.radio-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.radio-container label {
+    display: flex;
+    align-items: center;
+}

@@ -211,6 +211,8 @@ function copyToClipboard() {
  */
 function showLoader() {
   document.getElementById('loader').style.display = 'block';
+  document.querySelector('button[type="submit"]').disabled = true;
+  document.getElementById('update-button').disabled = true;
 }
 
 /**
@@ -218,6 +220,8 @@ function showLoader() {
  */
 function hideLoader() {
   document.getElementById('loader').style.display = 'none';
+  document.querySelector('button[type="submit"]').disabled = false;
+  document.getElementById('update-button').disabled = false;
 }
 
 /**

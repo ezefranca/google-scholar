@@ -9,6 +9,8 @@
     <meta name="author" content="Ezequiel Santos">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.4.0/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.4.0/highlight.min.js"></script>
 </head>
 <body>
     <header>
@@ -20,20 +22,20 @@
                 <input type="text" id="scholar-id" placeholder="Google Scholar ID or Google Scholar URL" required>
                 <div class="hint">Example: <code>qc6CJjYAAAAJ</code> or <code>https://scholar.google.com/citations?user=qc6CJjYAAAAJ</code></div>
                 <div class="sort-container">
-                    <div class="checkbox-container">
+                    <div class="radio-container">
                         <label>
                             <input type="radio" name="sortby" value="pubdate">
-                            Date&#160;&#160;
+                            Date
                         </label>
                         <label>
                             <input type="radio" name="sortby" value="cited">
-                            Cited&#160;&#160;
+                            Cited
                         </label>
                     </div>
                 </div>
                 <button type="submit"><i class="ai ai-google-scholar-square"></i>&nbsp;Fetch Publications</button>
             </form>
-            <p class="hint">Please, be patient, the first time can take one or two minutes...</p>
+            <p class="hint"><pre>Please be patient, the first time can take one or two minutes...</pre></p>
             <div id="loader" class="loader" style="display:none;"></div>
         </div>
         <div id="result-container" class="result-container" style="display:none;">
@@ -42,7 +44,7 @@
                 <code><a id="api-url" target="_blank"></a></code>
             </div>
             <h2>Publications JSON</h2>
-            <textarea id="json-result" readonly></textarea>
+            <pre><code id="json-result" class="json"></code></pre>
             <button onclick="copyToClipboard()">Copy to Clipboard</button>
             <a id="download-link" download="publications.json">Download JSON</a>
             <button id="update-button" style="display:none; background-color: red;">Update</button>
@@ -50,9 +52,9 @@
     </main>
     <footer>
         <div class="github">
-        <a href="https://github.com/ezefranca/google-scholar"> Access the project on Github</a><br>
+            <a href="https://github.com/ezefranca/google-scholar"> Access the project on Github</a><br>
         </div>
-        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ezefranca" data-color="#FFDD00" data-emoji="☕"  data-font="Bree" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ezefranca" data-color="#FFDD00" data-emoji="☕" data-font="Bree" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
         <p>&copy; 2024 Scholar Publications Fetcher. Not affiliated with Google. Use for educational purposes only.</p>
     </footer>
     <script src="scripts/scripts.js"></script>

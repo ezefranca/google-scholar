@@ -3,6 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('scholar-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const scholarIdOrUrl = document.getElementById('scholar-id').value;
+    
+    // Validate input before proceeding
+    if (!isValidGoogleScholarInput(scholarIdOrUrl)) {
+      alert('Invalid Google Scholar ID or URL');
+      return;
+    }
+    
     const sortby = getSortByValues();
     clearPreviousState();
     checkIfExists(scholarIdOrUrl, sortby);
@@ -11,6 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
   // Event listener for the update button
   document.getElementById('update-button').addEventListener('click', function() {
     const scholarIdOrUrl = document.getElementById('scholar-id').value;
+    
+    // Validate input before proceeding
+    if (!isValidGoogleScholarInput(scholarIdOrUrl)) {
+      alert('Invalid Google Scholar ID or URL');
+      return;
+    }
+
     const sortby = getSortByValues();
     triggerUpdate(scholarIdOrUrl, sortby);
   });
@@ -27,6 +41,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     return values;
   }
+
+  function isValidGoogleScholarURL(url) {
+    const googleScholarUrlPattern = /^https:\/\/scholar\.google\.com\/citations\?user=[a-zA-Z0-9_-]{12}$/;
+    return googleScholarUrlPattern.test(url);
+  }
+
+  function isValidGoogleScholarID(id) {
+    const googleScholarIdPattern = /^[a-zA-Z0-9_-]{12}$/;
+    return googleScholarIdPattern.test(id);
+  }
+
+  function isValidGoogleScholarInput(input) {
+    return isValidGoogleScholarURL(input) || isValidGoogleScholarID(input);
+  }
+
 });
 
 /**

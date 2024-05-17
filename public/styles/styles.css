@@ -108,6 +108,16 @@ button:hover {
     background: #357ae8;
 }
 
+.button-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 .loader {
     border: 12px solid #f3f3f3;
     border-top: 12px solid #4285f4;
@@ -253,7 +263,6 @@ button, #download-button {
     color: white;
     border: none;
     padding: 0.5em 1em;
-    border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
     margin-right: 10px;

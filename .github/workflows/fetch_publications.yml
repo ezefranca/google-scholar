@@ -8,6 +8,10 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
 
+    concurrency:
+      group: update-publications-${{ github.event.client_payload.scholar_id }}
+      cancel-in-progress: false
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -32,7 +36,12 @@ jobs:
       - name: Check if publications file exists
         id: check_file
         run: |
-          if [ -f "public/database/${{ github.event.client_payload.scholar_id }}.json" ]; then echo "File exists"; else echo "File does not exist"; exit 1; fi
+          if [ -f "public/database/${{ github.event.client_payload.scholar_id }}.json" ]; then
+            echo "File exists"
+          else
+            echo "File does not exist"
+            exit 1
+          fi
 
       - name: Commit and push changes
         env:
@@ -40,7 +49,28 @@ jobs:
         run: |
           git config --global user.email "mail_at_ifttt_com_sf4p862jsx_6f946e9a@privaterelay.appleid.com"
           git config --global user.name "ScholarBot"
-          git pull
-          git add public/database/${{ github.event.client_payload.scholar_id }}.json
-          git commit -m "Update publications for ${{ github.event.client_payload.scholar_id }}" || exit 0
-          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+          
+          MAX_RETRIES=5
+          RETRY_DELAY=5
+          RETRY_COUNT=0
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            git pull --rebase
+            
+            git add public/database/${{ github.event.client_payload.scholar_id }}.json
+            git commit -m "Update publications for ${{ github.event.client_payload.scholar_id }}" || exit 0
+            
+            if git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git; then
+              echo "Push successful"
+              break
+            else
+              echo "Push failed, retrying..."
+              RETRY_COUNT=$((RETRY_COUNT+1))
+              sleep $RETRY_DELAY
+            fi
+            
+            if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
+              echo "Exceeded max retries, giving up."
+              exit 1
+            fi
+          done

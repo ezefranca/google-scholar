@@ -40,6 +40,7 @@ jobs:
         run: |
           git config --global user.email "mail_at_ifttt_com_sf4p862jsx_6f946e9a@privaterelay.appleid.com"
           git config --global user.name "ScholarBot"
+          git pull
           git add public/database/${{ github.event.client_payload.scholar_id }}.json
           git commit -m "Update publications for ${{ github.event.client_payload.scholar_id }}" || exit 0
           git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git

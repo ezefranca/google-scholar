@@ -1,0 +1,794 @@
+[
+    {
+        "title": "Multi-touch surfaces: A technical guide",
+        "year": "2008",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:u5HHmVD_uO8C",
+        "citations": "324"
+    },
+    {
+        "title": "Morphees: toward high\" shape resolution\" in self-actuated flexible mobile devices",
+        "year": "2013",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:_kc_bZDykSQC",
+        "citations": "242"
+    },
+    {
+        "title": "EMPress: Practical hand gesture classification with wrist-mounted EMG and pressure sensing",
+        "year": "2016",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:uVUOdF_882EC",
+        "citations": "163"
+    },
+    {
+        "title": "AppDetox: helping users with mobile app addiction",
+        "year": "2013",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:mVmsd5A6BfQC",
+        "citations": "106"
+    },
+    {
+        "title": "A user-specific machine learning approach for improving touch accuracy on mobile devices",
+        "year": "2012",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:kNdYIx-mwKoC",
+        "citations": "105"
+    },
+    {
+        "title": "Map torchlight: a mobile augmented reality camera projector unit",
+        "year": "2009",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:u-x6o8ySG0sC",
+        "citations": "92"
+    },
+    {
+        "title": "PhotoMap: using spontaneously taken images of public maps for pedestrian navigation tasks on mobile devices",
+        "year": "2009",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:d1gkVwhDpl0C",
+        "citations": "82"
+    },
+    {
+        "title": "Visual separation in mobile multi-display environments",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:W7OEmFMy1HYC",
+        "citations": "62"
+    },
+    {
+        "title": "guitAR: supporting guitar learning through mobile projection",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:Y0pCki6q_DkC",
+        "citations": "59"
+    },
+    {
+        "title": "Climbaware: Investigating perception and acceptance of wearables in rock climbing",
+        "year": "2016",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:O0nohqN1r9EC",
+        "citations": "57"
+    },
+    {
+        "title": "Shelftorchlight: Augmenting a shelf using a camera projector unit",
+        "year": "2010",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:9yKSN-GCB0IC",
+        "citations": "52"
+    },
+    {
+        "title": "TransPrint: A method for fabricating flexible transparent free-form displays",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:UuEBAcK4md4C",
+        "citations": "49"
+    },
+    {
+        "title": "DeceptiBike: assessing the perception of speed deception in a virtual reality training bike system",
+        "year": "2016",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:-nhnvRiOwuoC",
+        "citations": "43"
+    },
+    {
+        "title": "Investigating the effectiveness of peephole interaction for smartwatches in a map navigation task",
+        "year": "2014",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:U_HPUtbDl20C",
+        "citations": "39"
+    },
+    {
+        "title": "WristRotate: a personalized motion gesture delimiter for wrist-worn devices",
+        "year": "2015",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:1DsIQWDZLl8C",
+        "citations": "38"
+    },
+    {
+        "title": "Scarfy: augmenting human fashion behaviour with self-actuated clothes",
+        "year": "2015",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:sszUF3NjhM4C",
+        "citations": "37"
+    },
+    {
+        "title": "Detecting users handedness for ergonomic adaptation of mobile user interfaces",
+        "year": "2015",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:kWvqk_afx_IC",
+        "citations": "34"
+    },
+    {
+        "title": "Face mask design to mitigate facial expression occlusion",
+        "year": "2020",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:g5Ck-dwhA_QC",
+        "citations": "31"
+    },
+    {
+        "title": "The media fa\u00e7ade toolkit: prototyping and simulating interaction with media fa\u00e7ades",
+        "year": "2013",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:aqlVkmm33-oC",
+        "citations": "29"
+    },
+    {
+        "title": "SurfacePhone: a mobile projection device for single-and multiuser everywhere tabletop interaction",
+        "year": "2014",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:9ZlFYXVOiuMC",
+        "citations": "27"
+    },
+    {
+        "title": "Evaluation of hybrid front-and back-of-device interaction on mobile devices",
+        "year": "2013",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:Wp0gIr-vW9MC",
+        "citations": "27"
+    },
+    {
+        "title": "Inferring landmarks for pedestrian navigation from mobile eye-tracking data and Google Street View",
+        "year": "2017",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:kzcSZmkxUKAC",
+        "citations": "25"
+    },
+    {
+        "title": "LittleProjectedPlanet: An Augmented Reality Game for Camera Projector Phones",
+        "year": "2009",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:qjMakFHDy7sC",
+        "citations": "24"
+    },
+    {
+        "title": "Understanding same-side interactions with wrist-worn devices",
+        "year": "2016",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:F2UWTTQJPOcC",
+        "citations": "23"
+    },
+    {
+        "title": "The mighty un-touchables: creating playful engagement on media fa\u00e7ades",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:hqOjcs7Dif8C",
+        "citations": "23"
+    },
+    {
+        "title": "hEYEbrid: A hybrid approach for mobile calibration-free gaze estimation",
+        "year": "2018",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:69ZgNCALVd0C",
+        "citations": "22"
+    },
+    {
+        "title": "Marauders light: replacing the wand with a mobile camera projector unit",
+        "year": "2009",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:2osOgNQ5qMEC",
+        "citations": "22"
+    },
+    {
+        "title": "VitaBoot: footwear with dynamic graphical patterning",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:QsaTk4IG4EwC",
+        "citations": "21"
+    },
+    {
+        "title": "ambiPad: enriching mobile digital media with ambient feedback",
+        "year": "2014",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:NDuN12AVoxsC",
+        "citations": "21"
+    },
+    {
+        "title": "Managing smartwatch notifications through filtering and ambient illumination",
+        "year": "2016",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:w0F2JDEymm0C",
+        "citations": "20"
+    },
+    {
+        "title": "Projector Phones: a new class of interfaces for augmented reality",
+        "year": "2010",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:UeHWp8X0CEIC",
+        "citations": "20"
+    },
+    {
+        "title": "ShadowLamp: An Ambient Display with Controllable Shadow Projection using Electrochromic Materials.",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:zGdJYJv2LkUC",
+        "citations": "19"
+    },
+    {
+        "title": "Pico projectors: Firefly or bright future?",
+        "year": "2012",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:MXK_kJrjxJIC",
+        "citations": "19"
+    },
+    {
+        "title": "Cycling@ CHI: Towards a research agenda for HCI in the bike lane",
+        "year": "2021",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:hSRAE-fF4OAC",
+        "citations": "18"
+    },
+    {
+        "title": "PINwI: pedestrian indoor navigation without infrastructure",
+        "year": "2010",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:IjCSPb-OGe4C",
+        "citations": "18"
+    },
+    {
+        "title": "Using electrochromic displays to display ambient information and notifications",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:Xl6nMSl579sC",
+        "citations": "17"
+    },
+    {
+        "title": "m+ pSpaces: virtual workspaces in the spatially-aware mobile environment",
+        "year": "2012",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:KlAtU1dfN6UC",
+        "citations": "17"
+    },
+    {
+        "title": "\" The story of life is quicker than the blink of an eye\" using corneal imaging for life logging",
+        "year": "2016",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:3bvyWxjaHKcC",
+        "citations": "16"
+    },
+    {
+        "title": "Investigating interaction techniques for state-of-the-art smartwatches",
+        "year": "2016",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:KNjnJ3z-R6IC",
+        "citations": "16"
+    },
+    {
+        "title": "Using mobile projection to support guitar learning",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:_FxGoFyzp5QC",
+        "citations": "15"
+    },
+    {
+        "title": "Mobile product customization",
+        "year": "2010",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:YsMSGLbcyi4C",
+        "citations": "15"
+    },
+    {
+        "title": "Hybrid settlers-integrating dynamic tiles into a physical board game using electrochromic displays",
+        "year": "2020",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:8Xgff_V0N9gC",
+        "citations": "14"
+    },
+    {
+        "title": "Using intelligent natural user interfaces to support sales conversations",
+        "year": "2012",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:8k81kl-MbHgC",
+        "citations": "14"
+    },
+    {
+        "title": "Analysing the effect of tangibile user interfaces on spatial memory",
+        "year": "2017",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:DkZNVXde3BIC",
+        "citations": "13"
+    },
+    {
+        "title": "Survey of interactive displays through mobile projections",
+        "year": "2016",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:FiDNX6EVdGUC",
+        "citations": "13"
+    },
+    {
+        "title": "Augmented reality-based advertising strategies for paper leaflets",
+        "year": "2013",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:4DMP91E08xMC",
+        "citations": "13"
+    },
+    {
+        "title": "Eype\u2014using eye-traces for eye-typing",
+        "year": "2013",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:oi2SiIJ9l4AC",
+        "citations": "13"
+    },
+    {
+        "title": "Multi-Touch Surfaces: A Technical Guide. techreport",
+        "year": "2008",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:silx2ntsSuwC",
+        "citations": "13"
+    },
+    {
+        "title": "Investigating current techniques for opposite-hand smartwatch interaction",
+        "year": "2017",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:BrOSOlqYqPUC",
+        "citations": "12"
+    },
+    {
+        "title": "Prototyping of Transparent and Flexible Electrochromic Displays",
+        "year": "2021",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:IsPWOBWtZBwC",
+        "citations": "11"
+    },
+    {
+        "title": "\" Do you think it is going to be the cock?\" using ambient shadow projection in dialogic reading",
+        "year": "2020",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:2v_ZtQDX9iAC",
+        "citations": "11"
+    },
+    {
+        "title": "The helpless soft robot-stimulating human collaboration through robotic movement",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:65Yg0jNCQDAC",
+        "citations": "11"
+    },
+    {
+        "title": "Twitsoccer: knowledge-based crowd-sourcing of live soccer events",
+        "year": "2015",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:-95Q15plzcUC",
+        "citations": "11"
+    },
+    {
+        "title": "Pedestrians as floating life-On the reinvention of the pedestrian city",
+        "year": "2021",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:zdjWy_NXXwUC",
+        "citations": "10"
+    },
+    {
+        "title": "Interacting with 3d content on stereoscopic displays",
+        "year": "2014",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:-jrNzM816MMC",
+        "citations": "10"
+    },
+    {
+        "title": "Learning through interactive artifacts: Personal fabrication using electrochromic displays to remember Atari women programmers",
+        "year": "2022",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:2ywjKiB__4kC",
+        "citations": "9"
+    },
+    {
+        "title": "Investigating the usage of thermal feedback as an active game element",
+        "year": "2017",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:pS0ncopqnHgC",
+        "citations": "8"
+    },
+    {
+        "title": "Comparing thermal and haptic feedback mechanisms for game controllers",
+        "year": "2017",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:kF1pexMAQbMC",
+        "citations": "8"
+    },
+    {
+        "title": "Exploring button design for low contrast user interfaces",
+        "year": "2021",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:YlPif8NxrbYC",
+        "citations": "7"
+    },
+    {
+        "title": "Face-the-Waste-Learning about Food Waste through a Serious Game",
+        "year": "2021",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:ghEM2AJqZyQC",
+        "citations": "6"
+    },
+    {
+        "title": "Detournavigator-Using google location history to generate unfamiliar personal routes",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:jSAVyFp_754C",
+        "citations": "6"
+    },
+    {
+        "title": "Evaluation framework for public interactive installations",
+        "year": "2021",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:wE-fMHVdjMkC",
+        "citations": "5"
+    },
+    {
+        "title": "Staging constructionist learning about energy for children with electrochromic displays and low-cost materials",
+        "year": "2021",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:eGYfIraVYiQC",
+        "citations": "5"
+    },
+    {
+        "title": "Informing Informal Caregivers About Dementia Through an Experience-Based Virtual Reality Game",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:TlpoogIpr_IC",
+        "citations": "5"
+    },
+    {
+        "title": "Long-lasting smart products: Overview of longevity concepts in sustainable ICT and design for sustainability",
+        "year": "2022",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:SAZ1SQo2q1kC",
+        "citations": "4"
+    },
+    {
+        "title": "SKIN-Embodied Navigation through WiFi Traffic using Vibro-Tactile Feedback",
+        "year": "2018",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:SnGPuo6Feq8C",
+        "citations": "4"
+    },
+    {
+        "title": "Eyemirror: Mobile calibration-free gaze approximation using corneal imaging",
+        "year": "2017",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:SGW5VrABaM0C",
+        "citations": "4"
+    },
+    {
+        "title": "Adding expressiveness to smartwatch notifications through ambient illumination",
+        "year": "2017",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:An6A6Jpfc1oC",
+        "citations": "4"
+    },
+    {
+        "title": "Mobile and personal projection (MP2)",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:roLk4NBRz8UC",
+        "citations": "4"
+    },
+    {
+        "title": "ECPlotter: A Toolkit for Rapid Prototyping of Electrochromic Displays",
+        "year": "2022",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:z6xuaG2dYH0C",
+        "citations": "3"
+    },
+    {
+        "title": "SimonXXL-investigating spontaneous group formation around public installations",
+        "year": "2020",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:qe6vwMD2xtsC",
+        "citations": "3"
+    },
+    {
+        "title": "Distributed User Interfaces for Projector Phones",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:0EnyYjriUFMC",
+        "citations": "3"
+    },
+    {
+        "title": "Multi-touch surfaces: A technical guide. Johannes Sch\u00f6ning",
+        "year": "2008",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:0aBXIfxlw9sC",
+        "citations": "3"
+    },
+    {
+        "title": "Soft Robotics Workshops: Supporting Experiential Learning About Design, Movement, and Sustainability",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:unp9ATQDT5gC",
+        "citations": "2"
+    },
+    {
+        "title": "User Experience and Social Interaction with Robots",
+        "year": "2022",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:T_ojBgVMvoEC",
+        "citations": "2"
+    },
+    {
+        "title": "Virtual Reality Learning Experiences about Dementia",
+        "year": "2021",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:X9ykpCP0fEIC",
+        "citations": "2"
+    },
+    {
+        "title": "ChromaBot-Prototyping Soft Robotic Actuators with Integrated Electrochromic Displays",
+        "year": "2021",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:1tZ8xJnm2c8C",
+        "citations": "2"
+    },
+    {
+        "title": "SelfSustainableCHI: Self-Powered Sustainable Interfaces and Interactions",
+        "year": "2020",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:Xz60mAmATU4C",
+        "citations": "2"
+    },
+    {
+        "title": "Exploring spatial menu representation and apartment-based categorization for online shopping",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:k_7cPK9k7w8C",
+        "citations": "2"
+    },
+    {
+        "title": "Gotta enhance\u2019em all: a case study of two Pokemon GO enhanced urban spaces in Aalborg, Denmark",
+        "year": "2017",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:JTqpx9DYBaYC",
+        "citations": "2"
+    },
+    {
+        "title": "Interactive Displays through Mobile Projection",
+        "year": "2015",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:ce2CqMG-AY4C",
+        "citations": "2"
+    },
+    {
+        "title": "Morphees: toward high shape resolution in self-actuated flexible mobile devices. toward high\" shape resolution\" in self-actuated flexible mobile devices",
+        "year": "2013",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:UmS_249rOGwC",
+        "citations": "2"
+    },
+    {
+        "title": "TouchPosing: multi-modal interaction with geospatial data",
+        "year": "2012",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:Zph67rFs4hoC",
+        "citations": "2"
+    },
+    {
+        "title": "Using smartphones for customizing products at the point of sale",
+        "year": "2012",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:3fE2CSJIrl8C",
+        "citations": "2"
+    },
+    {
+        "title": "Advanced interaction with mobile projection interfaces",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:ufrVoPGSRksC",
+        "citations": "2"
+    },
+    {
+        "title": "Mobile Projection Interfaces for Augmented Reality Applications",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:WF5omc3nYNoC",
+        "citations": "2"
+    },
+    {
+        "title": "Exploring the Usage of an Electronic Compass for Human Navigation in Extreme Environments",
+        "year": "2010",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:LkGwnXOMwfcC",
+        "citations": "2"
+    },
+    {
+        "title": "xChase A. Location-based multi-user pervasive game using a lightweight tracking framework",
+        "year": "2008",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:zYLM7Y9cAGgC",
+        "citations": "2"
+    },
+    {
+        "title": "Multi-Touch Surfaces: A Technical Guide/University of Munich (TUM). Version: 2008",
+        "year": "",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:sA9dB-pw3HoC",
+        "citations": "2"
+    },
+    {
+        "title": "FoodFighters-Improving Memory Retention of Food Items through a Mobile Serious Game",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:c1e4I3QdEKYC",
+        "citations": "1"
+    },
+    {
+        "title": "STEAM Matters for Sustainability: 10 Years of\" Art and Technology\" Student Research on Sustainability Through Problem-Based Learning.",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:NxmKEeNBbOMC",
+        "citations": "1"
+    },
+    {
+        "title": "Prototyping and Design of Transparent and Flexible Electrochromic Displays",
+        "year": "2022",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:isU91gLudPYC",
+        "citations": "1"
+    },
+    {
+        "title": "Liv i bev\u00e6gelse: Om fodg\u00e6ngerbyens\" genopfindelse\"",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:LXmCCkuhhTsC",
+        "citations": "1"
+    },
+    {
+        "title": "Comparing the Applicability of Pressure as a Game Metric to Self-assessment and Physiological Metrics",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:Hck25ST_3aIC",
+        "citations": "1"
+    },
+    {
+        "title": "Spatial interaction with mobile projected displays",
+        "year": "2014",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:PyEswDtIyv0C",
+        "citations": "1"
+    },
+    {
+        "title": "Evaluation of an in-call interaction technique for projector phones",
+        "year": "2013",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:qxL8FJ1GzNcC",
+        "citations": "1"
+    },
+    {
+        "title": "PeTRE-Workshop on Pervasive Technologies in Retail Environments",
+        "year": "2013",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:4TOpqqG69KYC",
+        "citations": "1"
+    },
+    {
+        "title": "Proxemic Interaction for Projector Phones",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:eQOLeE2rZwMC",
+        "citations": "1"
+    },
+    {
+        "title": "About Two Physical Interaction Metaphors: Narrowing the Gap between the Real and the Virtual World",
+        "year": "2009",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:pAkWuXOU-OoC",
+        "citations": "1"
+    },
+    {
+        "title": "Handheld Augmented Reality for Collaborative Boulder Training",
+        "year": "",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&pagesize=100&citation_for_view=-oJZckgAAAAJ:aIdbFUkbNIkC",
+        "citations": "1"
+    },
+    {
+        "title": "Learning from Cycling: Discovering Lessons Learned from CyclingHCI",
+        "year": "2024",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:hvmnpdAuIbkC",
+        "citations": "0"
+    },
+    {
+        "title": "FridgeSort-Improving Fridge Sorting behaviour to reduce Food Waste through a Mobile Serious Game",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:Zh0EY9V9P6UC",
+        "citations": "0"
+    },
+    {
+        "title": "Examining the Effects of Eye-tracking on Dyadic Conversations in Virtual Reality",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:4aZ_i-5WJEQC",
+        "citations": "0"
+    },
+    {
+        "title": "Weaving Hybrid Futures: Sustainability in Higher Education with PBL Through Art, Science, and Robotics",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:JP7YXuLIOvAC",
+        "citations": "0"
+    },
+    {
+        "title": "PeriFocus-Training Peripheral Color-and Shape Detection in Virtual Reality",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:AzKEL7Gb_04C",
+        "citations": "0"
+    },
+    {
+        "title": "Museum Visitor Experiences Based on Hyperspectral Image Data",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:H_jBuBxbQIAC",
+        "citations": "0"
+    },
+    {
+        "title": "Understanding long lasting design through tangible tokens",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:NMlhSUseqAsC",
+        "citations": "0"
+    },
+    {
+        "title": "Alchemy of Knowledge: Transdisciplinary entanglements of Artificial Biology, Robotics, and Art",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:KWzIFqRkAKkC",
+        "citations": "0"
+    },
+    {
+        "title": "User Experience Considered Harmful (for the Planet)",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:EsEWqaRxkBgC",
+        "citations": "0"
+    },
+    {
+        "title": "Service Design Methods for the Design of Smart Surfaces",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:CNPyR2KL9-0C",
+        "citations": "0"
+    },
+    {
+        "title": "Small fish in a big pond: Product longevity design strategies for smart speakers",
+        "year": "2023",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:ZqE1mSdD_DYC",
+        "citations": "0"
+    },
+    {
+        "title": "Proceedings of the 19th International Conference on Mobile and Ubiquitous Multimedia",
+        "year": "2020",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:qE4H1tSSYIIC",
+        "citations": "0"
+    },
+    {
+        "title": "MUM'20: Proceedings of the 19th International Conference on Mobile and Ubiquitous Multimedia",
+        "year": "2020",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:__bU50VfleQC",
+        "citations": "0"
+    },
+    {
+        "title": "Mobile and Wearable Interactions in the Retail Domain",
+        "year": "2020",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:-DxkuPiZhfEC",
+        "citations": "0"
+    },
+    {
+        "title": "Pedestrians as Floating Life",
+        "year": "2020",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:-yGd096yOn8C",
+        "citations": "0"
+    },
+    {
+        "title": "19th International Conference on Mobile and Ubiquitous Multimedia",
+        "year": "2020",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:eAlLMO4JVmQC",
+        "citations": "0"
+    },
+    {
+        "title": "Pedestrianism as Floating Life: How moving by foot in the city may become important again",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:rbm3iO8VlycC",
+        "citations": "0"
+    },
+    {
+        "title": "Research Article TransPrint: A Method for Fabricating Flexible Transparent Free-Form Displays",
+        "year": "2019",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:MIg0yeAD4ggC",
+        "citations": "0"
+    },
+    {
+        "title": "Session details: Gaze",
+        "year": "2017",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:DrR-2ekChdkC",
+        "citations": "0"
+    },
+    {
+        "title": "Survey of Interactive Displays through Mobile Projections",
+        "year": "2016",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:DyXnQzXoVgIC",
+        "citations": "0"
+    },
+    {
+        "title": "Towards Real Organic User Interfaces - Using Non-Newtonian Fluids for Self-Actuated Displays.",
+        "year": "2013",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:M3ejUd6NZC8C",
+        "citations": "0"
+    },
+    {
+        "title": "Projector Phones",
+        "year": "2012",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:PkcyUWeTMh0C",
+        "citations": "0"
+    },
+    {
+        "title": "Towards a mobile Everywhere Display based on a Depth-Camera Projector Unit",
+        "year": "2012",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:w1MjKQ0l0TYC",
+        "citations": "0"
+    },
+    {
+        "title": "Workshop on mobile interaction in retail environments (MIRE)",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:Se3iqnhoufwC",
+        "citations": "0"
+    },
+    {
+        "title": "Distributed Dynamic Peephole Interfaces for Mobile Map Navigation on Projector Phones",
+        "year": "2011",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:RoXSNcbkSzsC",
+        "citations": "0"
+    },
+    {
+        "title": "PhotoMap",
+        "year": "2009",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:A8cqit5AE6sC",
+        "citations": "0"
+    },
+    {
+        "title": "Authordraft-Service Design Methods for the Design of Smart Surfaces",
+        "year": "",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:8dzOF9BpDQoC",
+        "citations": "0"
+    },
+    {
+        "title": "Weaving Hybrid Futures: Sustainability in Higher Education with PBL Through Art, Science, and Robotics Special Issue",
+        "year": "",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:-uzm3Y7AvW0C",
+        "citations": "0"
+    },
+    {
+        "title": "Entertainment Computing",
+        "year": "",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:zwpXiJ37cpgC",
+        "citations": "0"
+    },
+    {
+        "title": "\u201cBuild your Own\u201d Multi-touch Surface: Bootcamp on Construction & Implementation of Multi-touch Surfaces",
+        "year": "",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:QUX0mv85b1cC",
+        "citations": "0"
+    },
+    {
+        "title": "3.18 Ambient Notifications for Dementia Care",
+        "year": "",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:rTD5ala9j4wC",
+        "citations": "0"
+    },
+    {
+        "title": "Mobile product customization, CHI'10 Extended Abstracts on Human Factors in Computing Systems, April 10-15, 2010",
+        "year": "",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-oJZckgAAAAJ&cstart=100&pagesize=100&citation_for_view=-oJZckgAAAAJ:WAzi4Gm8nLoC",
+        "citations": "0"
+    }
+]
